@@ -12,6 +12,7 @@ Fokusnya:
 project-gitlab/
 |
 |-- index.php
+|-- create.php
 |-- test.php
 |-- .github/
 |   `-- workflows/
@@ -29,7 +30,8 @@ project-gitlab/
 
 ## Penjelasan Project
 
-- `index.php`: tampilan web sederhana untuk membuat, melihat, update, dan delete task.
+- `index.php`: halaman dashboard untuk melihat task dan melakukan operasi utama.
+- `create.php`: halaman create task yang lebih fokus dan menarik.
 - `crud/*.php`: endpoint CRUD.
 - `crud/task_service.php`: business logic CRUD agar bisa dipakai aplikasi dan test.
 - `test.php`: automation test (tanpa framework) untuk validasi fungsi create/read/update/delete.

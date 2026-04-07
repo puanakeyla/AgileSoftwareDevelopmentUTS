@@ -18,7 +18,7 @@ function e(string $value): string
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project GitLab - Task CRUD</title>
+    <title>Project GitHub - Task CRUD</title>
     <style>
         body { font-family: Segoe UI, sans-serif; margin: 24px; background: #f4f7fb; color: #1f2937; }
         .card { background: white; padding: 16px; border-radius: 10px; box-shadow: 0 6px 16px rgba(0,0,0,0.08); margin-bottom: 16px; }
@@ -27,6 +27,7 @@ function e(string $value): string
         label { display: block; margin-bottom: 6px; font-weight: 600; }
         input, select { width: 100%; padding: 8px; margin-bottom: 10px; }
         button { padding: 8px 12px; border: 0; background: #0f766e; color: white; border-radius: 6px; cursor: pointer; }
+        .btn-link { display: inline-block; text-decoration: none; padding: 10px 14px; background: #155e75; color: #fff; border-radius: 8px; font-weight: 600; }
         .danger { background: #b91c1c; }
         table { width: 100%; border-collapse: collapse; }
         th, td { border-bottom: 1px solid #e5e7eb; padding: 8px; text-align: left; }
@@ -69,6 +70,8 @@ function e(string $value): string
             <h2>Data API</h2>
             <p>Endpoint read JSON: <a href="crud/read.php">crud/read.php</a></p>
             <p>Total task: <strong><?= count($tasks) ?></strong></p>
+            <p>Ingin halaman create yang lebih fokus?</p>
+            <a class="btn-link" href="create.php">Buka Halaman Create</a>
         </div>
     </div>
 
